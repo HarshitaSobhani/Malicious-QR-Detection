@@ -3,11 +3,11 @@ import 'package:http/http.dart' as http;
 
 class ApiService {
   // ── Change this to your backend URL ──
-  // Android Emulator:     http://10.0.2.2:8001
-  // iOS Simulator:        http://localhost:8001
-  // Physical device:      http://<your-laptop-ip>:8001
-  // Web:                  http://localhost:8001
-  static const String baseUrl = "http://127.0.0.1:8001";
+  // Android Emulator:     http://10.0.2.2:8000
+  // iOS Simulator:        http://localhost:8000
+  // Physical device:      http://<your-laptop-ip>:8000
+  // Web:                  http://localhost:8000
+  static const String baseUrl = "http://127.0.0.1:8000";
 
   static Future<Map<String, dynamic>> analyzeQr(String content) async {
     final url = Uri.parse("$baseUrl/api/analyze");

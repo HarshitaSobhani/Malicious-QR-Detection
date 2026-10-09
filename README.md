@@ -27,7 +27,7 @@ cd backend
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env        # add your own API keys
-uvicorn app.main:app --port 8001
+uvicorn app.main:app --port 8000
 ```
 
 - Health check: `GET /health`
@@ -42,7 +42,7 @@ flutter pub get
 flutter run
 ```
 
-The backend address is set in `frontend/lib/services/api_service.dart` (`baseUrl`, default `http://127.0.0.1:8001`). Use `http://10.0.2.2:8001` for the Android emulator, or your machine's LAN IP for a physical device.
+The backend address is set in `frontend/lib/services/api_service.dart` (`baseUrl`, default `http://127.0.0.1:8000`). Use `http://10.0.2.2:8000` for the Android emulator, or your machine's LAN IP for a physical device.
 
 ## Configuration
 
